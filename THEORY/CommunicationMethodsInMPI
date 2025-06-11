@@ -1,9 +1,0 @@
-Communication Methods in Mpi:
-
-1) Point to Point communication
-  - between two processes only
-  - send &  recv
-
-2) Collective Communication 
- - method of communication which involves participation of all processes in a communicator.
- - scatter, gather, bcast, reduce
