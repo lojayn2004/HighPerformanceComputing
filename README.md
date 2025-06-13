@@ -1,7 +1,5 @@
 # HighPerformanceComputing
 
-# High-Performance Computing (HPC)  Repository
-
 ## 📌 Description
 This repository contains implementations of parallel algorithms developed while studying High-Performance Computing through:
 - **Mahara Tech's HPC Course**
