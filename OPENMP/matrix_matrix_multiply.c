@@ -61,7 +61,7 @@ int main(int argc, char** argv) {
         }
         
         // Dividing the work across number of threads while considering spatial locality
-        #pragma omp parallel for
+        #pragma omp parallel for shared(mat1, mat2,res)
         for(int i = 0 ;i < n;i++) {
              
              for(int k = 0; k < r;k++) {
@@ -81,6 +81,7 @@ int main(int argc, char** argv) {
              }
              printf("\n");
         }
+        
         
         for(int i = 0;i < n;i++) {
             free(mat1[i]);
