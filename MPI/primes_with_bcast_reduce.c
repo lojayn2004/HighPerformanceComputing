@@ -35,7 +35,11 @@ int main(int argc, char** argv) {
     // range of numbers / size of all processes
     int eachProcessRange = (e - st + 1) / size; 
     int rem = (e - st + 1) % size;
-    
+
+    // Determine the range of elements for each process.
+    // If the process rank is less than the remainder, it gets one extra element.
+    // This distributes the remaining elements evenly across processes,
+    // preventing the root process from handling all the extra work.
     int p_st = st + (rank * eachProcessRange) + (rank < rem ? rank: rem);
     int p_e = p_st + eachProcessRange + (rank < rem ? 1: 0);
     int cur_cnt = 0;
