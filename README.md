@@ -3,7 +3,7 @@
 ## 📌 Description
 This repository contains implementations of parallel algorithms developed while studying High-Performance Computing through:
 - **Mahara Tech's HPC Course**
-- **"Computer Architecture: A Quantitative Approach" (Hennessy & Patterson)**
+- **"Computer organization & design" (Hennessy & Patterson)**
 
 ## ⚠️ Disclaimer
 > These implementations were developed as part of my HPC studies. They are not officially affiliated with any institution. While efforts have been made to ensure correctness, no guarantees are provided. Always verify results before use in critical applications.
